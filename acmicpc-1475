@@ -37,10 +37,10 @@ public class hi {
 					count = i;
 					}
 				else if(a==array[i]){
-						if(i!=6 && i!=9){
-							a = array[i];
-							count = i;
-						}
+					if(i!=6 && i!=9){
+						a = array[i];
+						count = i;
+					}
 				}
 			}
 
