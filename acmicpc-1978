@@ -1,0 +1,30 @@
+백준 알고리즘 
+1978번 소수찾기
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args){
+		Scanner scan = new Scanner(System.in);
+		int count;
+		int check = 0;
+		
+		count = scan.nextInt();
+		int[] a = new int[count];
+		for(int i=0;i<count;i++){
+			a[i] = scan.nextInt();
+		
+			boolean yesorno = true;
+			if(a[i]!=1){
+				for(int b=2;b<a[i];b++){
+					if(a[i]%b==0) {
+						yesorno = false;
+						break;
+					}
+				}
+				if(yesorno == true) check++;
+			}
+		}
+		System.out.println(check);
+		}
+}
