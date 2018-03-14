@@ -1,0 +1,21 @@
+180314
+백준알고리즘
+2908번 상수
+
+import java.util.Scanner;
+
+public class hi {
+	public static void main(String[] args){
+		Scanner scan = new Scanner(System.in);
+		StringBuffer sb = new StringBuffer();
+		StringBuffer sb2 = new StringBuffer();
+		
+		int a = Integer.parseInt(sb.append(scan.nextInt()).reverse().toString());
+		int b = Integer.parseInt(sb2.append(scan.nextInt()).reverse().toString());
+		
+		if(a>b)
+			System.out.println(a);
+		else
+			System.out.println(b);
+	}
+}
