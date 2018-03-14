@@ -1,0 +1,15 @@
+180314
+백준알고리즘
+11654번 아스키코드
+
+import java.util.Scanner;
+
+public class hi {
+	public static void main(String[] args){
+		Scanner scan = new Scanner(System.in);
+		String word = scan.next();
+		
+		System.out.println((int)(word.charAt(0)));
+		
+	}
+}
