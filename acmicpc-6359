@@ -1,0 +1,39 @@
+180315
+백준알고리즘
+6359번 만취한상범(제목;;)
+
+import java.util.Scanner;
+
+public class hi {
+	public static void main(String[] args){
+		Scanner scan = new Scanner(System.in);
+		int testcase = scan.nextInt();
+		int[] array = new int[testcase];
+		
+		for(int i=0;i<testcase;i++){
+			int count = 0;
+			int roomcount = scan.nextInt();
+			int[] room = new int[roomcount];
+			
+			for(int a=0;a<roomcount;a++)
+				room[a] = -1;
+			
+			for(int x=2;x<=roomcount;x++){
+				int y = 1;
+				while(x*y<=roomcount){
+					room[(x*y)-1]*=-1;
+					y++;
+				}
+			}
+			
+			for(int b=0;b<roomcount;b++){
+				if(room[b]==-1)
+					count++;
+			}
+			
+			array[i] = count;
+		}
+		for(int i=0;i<testcase;i++)
+			System.out.println(array[i]);
+		}
+}
