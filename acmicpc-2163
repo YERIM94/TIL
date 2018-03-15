@@ -1,0 +1,17 @@
+180315
+백준알고리즘
+2163번 초콜릿자르기
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args){
+		Scanner scan = new Scanner(System.in);
+		
+		int n = scan.nextInt();
+		int m = scan.nextInt();
+		
+		int result = (n-1)+(m-1)*n;
+		System.out.println(result);
+		}
+}
