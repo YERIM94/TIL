@@ -1,7 +1,10 @@
-180314
-백준알고리즘
-1427번 소트인사이드
+## 문제
+- 180314
+- 백준알고리즘
+- 1427번 소트인사이드
 
+## 코드
+```java
 import java.util.Scanner;
 
 public class hi {
@@ -43,3 +46,4 @@ public class hi {
 		}
 	}
 }
+```
