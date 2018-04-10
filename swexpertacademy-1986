@@ -1,0 +1,25 @@
+180411
+sw expert academy
+1986. 지그재그 숫자
+
+import java.util.Scanner;
+ 
+class Solution {
+    public static void main(String[] args) throws Exception {
+        Scanner sc = new Scanner(System.in);
+        int count = sc.nextInt();
+        int[] array = new int[count];
+        for(int i=0;i<count;i++){
+            array[i] = sc.nextInt();
+        }
+         
+        for(int i=0;i<count;i++){
+            if(array[i]%2==0) array[i] = array[i]/2*(-1);
+            else array[i] = array[i]/2*(-1)+array[i];
+        }
+         
+        for(int i=0;i<count;i++){
+            System.out.println("#"+(i+1)+" "+array[i]);
+        }   
+    }
+}
