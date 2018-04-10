@@ -1,4 +1,4 @@
-# TIL<font size="8">(Today I Learned)</font>
+# TIL(Today I Learned)
 -algorithm<br/><br/>
 www.acmicpc.net<br/>
 www.swexpertacademy.com
