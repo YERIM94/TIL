@@ -1,0 +1,33 @@
+180411
+sw expert academy
+3431. 운동관리
+
+import java.util.Scanner;
+
+class hi {
+    public static void main(String[] args) throws Exception {
+        Scanner sc = new Scanner(System.in);
+        int count = sc.nextInt();
+        int[] array = new int[count];
+        
+        for(int i=0;i<count;i++){
+        	int[] array2 = new int[3];
+        	for(int j=0;j<3;j++){
+        		array2[j] = sc.nextInt();
+        	}
+        	if(array2[2]<array2[0]){
+        		array[i] = array2[0]-array2[2];
+        	}
+        	else if(array2[2]>=array2[0] && array2[2]<=array2[1]){
+        		array[i] = 0;
+        	}
+        	else{
+        		array[i] = -1;
+        	}
+        }
+        
+        for(int i=0;i<count;i++){
+        	System.out.println("#"+(i+1)+" "+array[i]);
+        }   
+    }
+}
