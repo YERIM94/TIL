@@ -1,0 +1,32 @@
+180416
+sw expert academy
+3314. 보충학습과 평균
+
+import java.util.Scanner;
+
+class hi {		
+    public static void main(String[] args) throws Exception {
+        Scanner sc = new Scanner(System.in);
+        int count = sc.nextInt();
+        int[] answer = new int[count];
+       
+        for(int i=0;i<count;i++){
+        	int[] array = new int[5];
+        	for(int j=0;j<5;j++){
+        		array[j] = sc.nextInt();	
+        	}
+        	
+        	for(int j=0;j<5;j++){
+        		if(array[j]<40){
+        			array[j] = 40;
+        		}
+        	}
+        	answer[i] =((array[0]+array[2]+array[3]+array[4]+array[1])/5);
+        }
+              
+        
+        for(int i=0;i<count;i++){
+        	System.out.println("#"+(i+1)+" "+answer[i]);
+        }   
+    }
+}
