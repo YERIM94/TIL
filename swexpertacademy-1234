@@ -1,0 +1,39 @@
+180418
+sw expert academy
+1234. 비밀번호
+
+import java.text.NumberFormat;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+class hi {		
+	
+	static String delete_same(StringBuffer sb, String number){
+		for(int j=0;j<sb.length()-1;j++){
+    		if(number.charAt(j)==number.charAt(j+1)){
+    			sb.deleteCharAt(j+1);
+    			sb.deleteCharAt(j);
+    			return delete_same(sb, sb.toString());
+	    		}
+	    	}
+		return sb.toString();
+	}
+	
+    public static void main(String[] args) throws Exception {
+        Scanner sc = new Scanner(System.in);
+        String[] answer = new String[10];
+        StringBuffer sb = new StringBuffer();
+        
+        for(int i=0;i<10;i++){
+        	sb.setLength(0);
+        	int count = sc.nextInt();
+        	String number = sc.nextLine();
+        	sb.append(number);
+        	answer[i] = delete_same(sb, number);
+        }
+        
+        for(int i=0;i<10;i++){
+        	System.out.println("#"+(i+1)+" "+answer[i]);
+        }   
+    }
+}
