@@ -1,0 +1,52 @@
+180420
+sw expert academy
+2805. 농작물수확
+
+package codepie;
+
+import java.text.NumberFormat;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Scanner;
+
+class hi {			
+    public static void main(String[] args) throws Exception {
+        Scanner sc = new Scanner(System.in);
+        int count = sc.nextInt();
+        int[] answer = new int[count];
+        
+        for(int i=0;i<count;i++){
+        	int farm = sc.nextInt();
+        	int answer1=0;
+        	int[][] array = new int[farm][farm];
+        	for(int x=0;x<farm;x++){
+        		String heng = sc.next(); //next()를 nextLine()으로 했더니 제대로 실행이 안돼서 이것때매 삽질을 몇시간을 했는지ㅎ
+        		for(int y=0;y<farm;y++){
+        				if(y==farm-1){
+            				array[x][y] = (heng.charAt(heng.length()-1)-48);
+            			}
+            			else{
+            				array[x][y] = heng.charAt(y)-48;
+            			}
+        		}
+        	}
+        	
+        	for(int x=0;x<=farm/2;x++){
+        		for(int y=farm/2-x;y<=farm/2+x;y++){
+        			answer1+=array[x][y];
+        		}
+        	}
+        	
+        	for(int x=farm/2+1;x<farm;x++){
+        		for(int y=farm/2-(farm-x-1);y<=farm/2+(farm-x-1);y++){
+        			answer1+=array[x][y];
+        		}
+        	}
+        	answer[i] = answer1;
+        }
+        
+        for(int i=0;i<count;i++){
+        	System.out.println("#"+(i+1)+" "+answer[i]);
+        }   
+    }
+}
