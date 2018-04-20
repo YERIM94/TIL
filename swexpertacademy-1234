@@ -13,7 +13,7 @@ class hi {
     		if(number.charAt(j)==number.charAt(j+1)){
     			sb.deleteCharAt(j+1);
     			sb.deleteCharAt(j);
-    			return delete_same(sb, sb.toString());
+    			return delete_same(sb, sb.toString()); //return때매(덕에?) 삽질했다
 	    		}
 	    	}
 		return sb.toString();
