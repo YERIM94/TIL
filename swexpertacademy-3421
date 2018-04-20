@@ -1,0 +1,45 @@
+180421
+sw expert academy
+3421. 수제 버거 장인
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+class hi {			
+    public static void main(String[] args) throws Exception {
+    	Scanner sc = new Scanner(System.in);
+        int count = sc.nextInt();
+        int[] answer = new int[count];
+        
+        for(int i=0;i<count;i++){
+        	int num = sc.nextInt();
+        	int[] array = new int[num];
+        	boolean[] visit = new boolean[10001];
+        	int sum = 0;
+        	int sumcount = 0;
+        	
+        	for(int j=0; j<num;j++){
+        		array[j] = sc.nextInt();
+        		sum+=array[j];
+        	}
+        	
+        	visit[0]=true;
+        	for(int x=0;x<num;x++){
+        		for(int y=sum;y>=0;y--){
+        			if(visit[y]==true){
+        				visit[y+array[x]]=true;
+        			}
+        		}
+        	}
+        	for(int j=0;j<=sum;j++){
+        		if(visit[j]==true){
+        			sumcount++;
+        		}
+        	}
+        	answer[i] = sumcount;
+        }	
+        for(int i=0;i<count;i++){
+    		System.out.println("#"+(i+1)+" "+answer[i]);
+    	}
+    }
+}
