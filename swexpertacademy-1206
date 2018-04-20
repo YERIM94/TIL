@@ -1,0 +1,41 @@
+180420
+sw expert academy
+1206.View
+
+import java.util.Scanner;
+
+class Solution {			
+    public static void main(String[] args) throws Exception {
+        Scanner sc = new Scanner(System.in);
+        int[] answer = {0,0,0,0,0,0,0,0,0,0};
+
+        for(int i=0;i<10;i++){
+        	int count = sc.nextInt();
+        	int[] array = new int[count];
+        	int temp = 0;
+        	
+        	for(int j=0;j<count;j++){
+        		array[j] = sc.nextInt();
+        	}
+        	
+        	for(int j=2;j<=count-3;j++){
+        		if(array[j]>array[j-2] && array[j]>array[j-1] && array[j]>array[j+1] && array[j]>array[j+2]){
+        			temp = array[j];
+        			for(int x=j-2;x<=j+2;x++){
+        				if(x == j){
+        					continue;
+        				}
+        				else if(array[j]-array[x]<=temp){
+        					temp = array[j]-array[x];
+        				}
+        			}
+        			answer[i]+=temp;
+        		}
+        	}
+        }
+
+        for(int i=0;i<10;i++){
+        	System.out.println("#"+(i+1)+" "+answer[i]);
+        }   
+    }
+}
