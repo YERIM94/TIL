@@ -3,5 +3,5 @@
 -algorithm<br/><br/>
 
 ## Training Site
-www.acmicpc.net<br/>
-www.swexpertacademy.com
+- www.acmicpc.net<br/>
+- www.swexpertacademy.com
