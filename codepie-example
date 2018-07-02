@@ -1,7 +1,9 @@
-180314
-한화S&C CODEPIE
-예제 두 정수의 합
+:date: 180314
+## 문제
+한화S&C CODEPIE 예제 - 두 정수의 합
 
+## Code
+```java
 import java.util.Scanner;
 
 public class hi {
@@ -23,3 +25,4 @@ public class hi {
 		}
 	}
 }
+```
