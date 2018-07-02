@@ -3,7 +3,7 @@
 <br/><br/>
 ## 진행중
 [모의SW역량테스트](https://www.swexpertacademy.com/main/learn/course/subjectList.do?courseId=AVvlSPbKAAHw5UPa)<br/>
-[ ]디저트카페:cake:
+- [ ] 디저트카페:cake:
 <br/><br/>
 ## Training Site
 - www.acmicpc.net<br/>
