@@ -1,0 +1,39 @@
+180702
+sw expert academy
+1204. 최빈수 구하기
+
+import java.util.Scanner;
+
+public class Solution {
+
+	public static void main(String[] args){
+		Scanner scan = new Scanner(System.in);
+		
+		int count = scan.nextInt();
+		
+		int[] array = new int[101];
+		
+		for(int a=0;a<count;a++){
+			int temp = 0, index = 0;
+			int test_case = scan.nextInt();
+			
+			for(int i=0;i<array.length;i++){
+				array[i] = 0;
+			}
+			
+			for(int i=0;i<1000;i++){
+				array[scan.nextInt()]++;
+			}
+			
+			for(int i=0;i<array.length;i++){
+				if(array[i]>=temp){
+					temp = array[i];
+					index = i;
+				}
+			}
+			
+			System.out.println("#"+test_case+" "+index);
+			
+			}
+	}
+}
