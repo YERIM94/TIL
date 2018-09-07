@@ -4,7 +4,7 @@
 ## 진행중
 [모의SW역량테스트](https://www.swexpertacademy.com/main/learn/course/subjectList.do?courseId=AVvlSPbKAAHw5UPa)<br/>
 - [ ] 디저트카페 :cake:
-- [ ] 등산로조성 :evergreen_tree:
+- [x] 등산로조성 :evergreen_tree:
 - [ ] 탈주범검거 :police_car:
 - [ ] 홈방범서비스 :rotating_light:
 <br/><br/>
