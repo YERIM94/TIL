@@ -1,5 +1,8 @@
 :date: 2020.11.24
-## Hash - 1. 완주하지 못한 선수
+## 문제
+Hash-1. 완주하지 못한 선수
+
+## Code
 ```java
 import java.util.HashMap;
 class Solution {
