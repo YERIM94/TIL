@@ -2,7 +2,7 @@
 
 ## 문제
 Cos Pro 1급 Java
-Part3-2. 숫자 뽑기
+</br> Part3-2. 숫자 뽑기
 
 ## Code
 ```java
