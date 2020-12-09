@@ -2,7 +2,7 @@
 
 ## 문제
 Cos Pro 1급 Java
-Part3-1. 꽃피우기
+</br>Part3-1. 꽃피우기
 
 ## Code
 ```java
